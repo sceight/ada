@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title id="title"></title>
+    <script type="text/javascript" src="AIRAliases.js" />
+    <script type="text/javascript" src="jquery-1.3.2.min.js" />
+    <script type="text/javascript" src="utils.js" />
+    <script type="text/javascript" src="app.js" />
+    <link type="text/css" rel="stylesheet" id="ss" 
+          href="themes/ada/styles.css" />
+</head>
+<body onload="ada.init();">
+
+<div id="dvcontainer" class="main_background"></div>
+<div id="dvtitlebar"></div>
+<div id="dvthrobber"></div>
+
+<div id="dvmain">
+    <div id="dvtoggle"></div>
+    <div id="dvtimeline"></div>
+    <div id="dvbottomborder"></div>
+    <div id="dvupdatearea">
+        <textarea id="dvupdateinput" 
+         tabindex="1"
+         rows="5"
+         onkeypress="ada.onUpdateChange()"
+         onkeydown="ada.onUpdateChange()"
+         onkeyup="ada.onUpdateChange()"></textarea>
+        <span id="dvupdatecount">140</span>
+        <button id="bnupdatesend" tabindex="2" class="btn2">Send</button>
+    </div>
+    <div id="dvfilterurl">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+        <td>
+            <input type="text" id="infilter" title="filter user" />
+            <input type="text" id="inurl" title="shorten link" />
+        </td>
+        <td width="1%"><div id="dvurl"></div></td>
+        </tr></table>
+    </div>
+    <div id="dvmenucontainer">
+        <div id="dvmenu"></div>
+        <div id="dvmainmenu" class="menu">
+            <div class="menuitem" id="mihome">Home</div>
+            <div class="menuitem" id="mirepl">Mentions</div>
+            <div class="menuitem" id="mimsgs">Messages</div>
+            <hr />
+            <div class="menuitem" id="mirefresh">Refresh</div>
+            <div class="menuitem" id="miavatars">Show pics</div>
+            <div class="menuitem" id="mitheme">Theme...</div>
+            <div class="menuitem" id="miabout">About...</div>
+            <hr />
+            <div class="menuitem" id="misignout">Signout</div>
+        </div>
+    </div>
+</div>
+
+<div id="dvtopborder"></div>
+
+<div id="dvlogin">
+    <span id="spq" class="screenname">Hi.</span>
+    <br />
+    <br />
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+    <td width="5%">username: </td><td>&nbsp;&nbsp;</td>
+    <td><input type="text" id="inusernm" /></td>
+    </tr>
+    <tr>
+    <td>password: </td><td></td>
+    <td><input type="password" id="inpasswd" /></td>
+    </tr>
+    <tr>
+    <td></td><td></td>
+    <td>
+        <table style="padding: 5px 0;"><tr>
+        <td><input type="checkbox" id="chkrememberme" /></td>
+        <td>save me</td>
+        </tr></table>
+    </td>
+    </tr>
+    <tr>
+    <td></td><td></td>
+    <td><button id="bnsignin" class="btn">Sign in</button></td>
+    </tr>
+    </table>
+</div>
+
+<div id="dvabout">
+    <img src="/icons/icon32.png" />
+    <br />
+    version
+    <span id="aboutversion"></span>
+    <br />
+    <a href="http://madan.org/ada" class="link">http://madan.org/ada</a>
+    <br />
+    <br />
+    Please support Ada.
+    <br />
+    <a href="http://bit.ly/gSRHY" class="link">Get worm on your iPhone</a> :)
+    <br />
+    <br />
+    <button id="bnaboutok" class="btn">Ok</button>
+</div>
+
+<div id="dvthememenu" class="menu">
+    <div id="dvthemelist"></div>
+    <button id="bnthemeok" class="btn">Done</button>
+</div>
+
+<div id="dvmessage"></div>
+
+<div id="dvexit"></div>
+<div id="dvmin"></div>
+<div id="dvgripper"></div>
+
+</body>
+</html>

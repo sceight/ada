@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<application xmlns="http://ns.adobe.com/air/application/1.5"> 
+    <id>org.madan.air.ada</id>
+    <version>1.24</version> 
+    <filename>ada</filename> 
+    <initialWindow> 
+        <content>assets/ada.html</content>
+     	<visible>false</visible>
+	 	<systemChrome>none</systemChrome>
+		<transparent>true</transparent>
+    </initialWindow>
+
+    <icon>
+        <image16x16>/icons/icon16.png</image16x16>
+        <image32x32>/icons/icon32.png</image32x32>
+        <image48x48>/icons/icon48.png</image48x48>
+        <image128x128>/icons/icon128.png</image128x128>
+    </icon>
+
+</application>
